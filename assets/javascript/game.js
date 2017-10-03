@@ -21,7 +21,7 @@ function crystal(id, src) {
 
 	this.crystalID = id;
 	this.imgSrc = src;
-	this.crystalValue = (Math.floor(Math.random() * (maxCrystalValue - minCrystalValue)) + minCrystalValue);
+	this.crystalValue = (Math.floor(Math.random() * (maxCrystalValue)) + minCrystalValue);
 	this.getID = function() {
 		return this.crystalID;
 	};
@@ -32,7 +32,7 @@ function crystal(id, src) {
 		return this.crystalValue;
 	};
 	this.resetValue = function() {
-		this.crystalValue = (Math.floor(Math.random() * (maxCrystalValue - minCrystalValue)) + minCrystalValue);
+		this.crystalValue = (Math.floor(Math.random() * (maxCrystalValue)) + minCrystalValue);
 		return this.crystalValue;
 	};
 };
@@ -56,7 +56,7 @@ function displayCrystals() {
  };
 
  function setRandomNumber() {
- 	randomNumber = (Math.floor(Math.random() * (maxRandomNumber - minRandomNumber)) + minRandomNumber);
+ 	randomNumber = (Math.floor(Math.random() * (maxRandomNumber - minRandomNumber + 1)) + minRandomNumber);
  	$("#randomNumber").html(randomNumber);
  };
 
