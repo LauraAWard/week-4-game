@@ -91,6 +91,15 @@ function compareNumbers() {
 	}
 };
 
+function resetCrystalValues() {
+	$.each(crystalArray, function(number, crystal) {
+		var tempValue = this.resetValue();
+		console.log(tempValue);
+		$("#" + this.getID()).attr("value", tempValue);
+	});
+
+};
+
 function startGame() {
 	createCrystalArray();
 	displayCrystals();
@@ -98,11 +107,7 @@ function startGame() {
 };
 
 function resetGame() {
-	$.each(crystalArray, function(number, crystal) {
-		var temp = this.resetValue();
-		console.log(temp);
-	});
-// need to update button values with loop
+	resetCrystalValues();
 	setRandomNumber();
 	resetScore();
 };
