@@ -1,4 +1,7 @@
 
 .btn {
 	float: left;
+	color: white;
+	background-color: white;
+	border-color: purple;
 }
