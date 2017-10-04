@@ -52,15 +52,25 @@ span {
 
 #instructions {
 	background-color: SkyBlue;
-	width: 35%;
+	min-width: 250px;
 	padding: 20px;
 }
 
 #randomNumber {
 	font-size: 175px;
 	padding-top: 50px;
+	color: purple;
+	animation: cyclecolor 3s infinite;
 }
 
 #crystalBtns {
 	white-space:nowrap;
+}
+
+@keyframes cyclecolor {
+	0% {color: purple;}
+	25% {color: blue;}
+	50% {color: green;}
+	100% {color: purple;}
+
 }
