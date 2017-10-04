@@ -55,8 +55,8 @@ function displayCrystals() {
    	var crystalDiv = $("#crystalBtns");
  
   	$.each(crystalArray, function(number, crystal){
-  		crystalDiv.append("<div col-md-3><button type='button' class='btn' id=" + this.getID() + 
-  		" value=" + this.getvalue() + "><img src=" + this.getSrc() + "></button></div>");
+  		crystalDiv.append("<div class='col-md-3'><button type='button' class='btn' id=" + this.getID() + 
+  		" value=" + this.getvalue() + "><img src=" + this.getSrc() + " alt='Crystal'></button></div>");
   	 });
  };
 

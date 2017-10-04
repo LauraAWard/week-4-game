@@ -7,10 +7,10 @@ body {
 h1 {
 	font-family: 'Elsie Swash Caps', cursive;
 	font-size: 90px;
-	color: purple;
+	color: Purple;
 	text-align: center;
 	padding-top: 20px;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 	text-shadow: 5px 5px 3px Black;
 }
 
@@ -22,8 +22,9 @@ h3 {
 h4 {
 	font-size: 30px;
 	font-weight: bold;
-	padding-top: 40px;
+	padding-top: 80px;
 	padding-bottom: 40px;
+	text-shadow: 1px 1px 2px Purple;
 }
 
 p {
@@ -42,12 +43,12 @@ span {
 
 .btn {
 	float: left;
-	color: white;
+	color: White;
 	background-color: white;
-	border-color: purple;
+	border-color: Purple;
 	border-style: outset;
 	border-width: 2px;
-	margin: 10px;
+	margin: 20px;
 }
 
 #instructions {
@@ -59,18 +60,22 @@ span {
 #randomNumber {
 	font-size: 175px;
 	padding-top: 50px;
-	color: purple;
-	animation: cyclecolor 6s infinite;
+	color: Purple;
+	animation: cyclecolor 10s infinite;
+	text-align: center;
+	vertical-align: middle;
 }
 
 #crystalBtns {
 	white-space:nowrap;
+	min-width: 100%;
 }
 
 @keyframes cyclecolor {
-	0% {color: purple;}
-	25% {color: blue;}
-	50% {color: green;}
-	100% {color: purple;}
-
+	0% {color: Purple;}
+	20% {color: BlueViolet;}
+	40% {color: MediumBlue;}
+	60% {color: SeaGreen;}
+	80% {color: RebeccaPurple;}
+	100% {color: Purple;}
 }
