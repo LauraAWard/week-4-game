@@ -69,7 +69,6 @@ function displayCrystals() {
 function addToScore(value) {
 	
 	totalScore += parseInt(value);
-	console.log(totalScore);
 	$("#totalScore").html(totalScore);
 	compareNumbers();
 };
@@ -109,7 +108,6 @@ function resetCrystalValues() {
 	
 	$.each(crystalArray, function(number, crystal) {
 		var tempValue = this.resetValue();
-		console.log(tempValue);
 		$("#" + this.getID()).attr("value", tempValue);
 	});
 

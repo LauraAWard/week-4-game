@@ -1,8 +1,7 @@
 
 body {
 	font-family: 'Elsie Swash Caps', cursive;
-
-
+	background-image: url("../images/crystal-bg-fade.jpg");
 }
 
 h1 {
@@ -10,8 +9,9 @@ h1 {
 	font-size: 90px;
 	color: purple;
 	text-align: center;
+	padding-top: 20px;
 	padding-bottom: 30px;
-	text-shadow: 5px 5px 3px SlateGrey;
+	text-shadow: 5px 5px 3px Black;
 }
 
 h3 {
@@ -21,6 +21,7 @@ h3 {
 
 h4 {
 	font-size: 30px;
+	font-weight: bold;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
