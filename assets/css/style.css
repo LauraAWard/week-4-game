@@ -1,7 +1,65 @@
 
+body {
+	font-family: 'Elsie Swash Caps', cursive;
+
+
+}
+
+h1 {
+	font-family: 'Elsie Swash Caps', cursive;
+	font-size: 90px;
+	color: purple;
+	text-align: center;
+	padding-bottom: 30px;
+	text-shadow: 5px 5px 3px SlateGrey;
+}
+
+h3 {
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+h4 {
+	font-size: 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+}
+
+span {
+	white-space:nowrap;
+}
+
 .btn {
 	float: left;
 	color: white;
 	background-color: white;
 	border-color: purple;
+	border-style: outset;
+	border-width: 2px;
+	margin: 10px;
+}
+
+#instructions {
+	background-color: SkyBlue;
+	width: 35%;
+	padding: 20px;
+}
+
+#randomNumber {
+	font-size: 175px;
+	padding-top: 50px;
+}
+
+#crystalBtns {
+	white-space:nowrap;
 }

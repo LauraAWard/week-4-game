@@ -3,44 +3,68 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  	<link href="https://fonts.googleapis.com/css?family=Elsie+Swash+Caps|Lato" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  	
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+
   	<meta charset="UTF-8">
 
 	<title>Crystal Collector Game</title>
+
 </head>
 <body>
 
 	<div><h1>Crystal Collector</h1></div>
 
-	<div>
-		<h3>Instructions:</h3>
-		<p>You will be given a random number at the start of the game.</p>
-		<p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
-		<p>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.</p>
-		<p>The value of each crystal is hidden from you until you click on it, and each time the game starts the value of each crystal will change.</p>
-	</div>
+	<div class="container">
+	  	<div class="row">
+		    <div class="col-md-1"><br>
+		    </div>
 
-	<div><h4 id="randomNumber"></h4></div>
-	
-	<div><h4>Wins: <span class="badge" id="winCnt">0</span></h4>
-	</div>
+			<div id="instructions" class="col-md-5">
+				<h3>Instructions:</h3>
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it, and each time the game starts the value of each crystal will change.</p>
+			</div>
 
-	<div><h4>Losses: <span class="badge" id="lossCnt">0</span></h4>
-	</div>
+		    <div class="col-md-1"><br>
+		    </div>
 
-	<div><h4>Total Score: <span class="badge" id="totalScore">0</span></h4>
-	</div>
-<!--<div><button type="button" class="btn btn-primary" id="crystal-1"><img src="assets/images/amethyst.jpg"></button></div>
-	<div><button type="button" class="btn btn-primary" id="crystal-2"><img src="assets/images/green.jpg"></button></div>
-	<div><button type="button" class="btn btn-primary" id="crystal-2"><img src="assets/images/purple.jpg"></button></div>
-	<div><button type="button" class="btn btn-primary" id="crystal-4"><img src="assets/images/rainbow.jpg"></button></div>
--->
-	<div id="crystalBtns"></div>
+			<div class="col-md-4">
+				<h4 id="randomNumber"></h4></div>
+		    
+		    <div class="col-md-1"><br>
+		    </div>
+		</div>	
 
+	  	<div class="row">
+		    <div class="col-md-1"><br>
+		    </div>
+			
+			<div class="col-md-3"><h4>Wins: <span class="badge badge-pill badge-success" id="winCnt">0</span></h4>
+			</div>
+
+			<div class="col-md-3"><h4>Losses: <span class="badge badge-pill badge-danger" id="lossCnt">0</span></h4>
+			</div>
+
+			<div class="col-md-5"><h4>Total Score: <span class="badge badge-pill badge-info" id="totalScore">0</span></h4>
+			</div>
+
+		</div>
+
+	  	<div class="row">
+		    <div class="col-md-1"><br>
+		    </div>
+
+			<div class="col-md-11" id="crystalBtns"></div>
+
+		</div>
+	</div>
 </body>
 </html>
